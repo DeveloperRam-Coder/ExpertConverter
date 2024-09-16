@@ -1,0 +1,128 @@
+/* App.css */
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .App {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .App-header {
+    margin-bottom: 20px;
+  }
+  
+  .App-header h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .App-header p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Upload Section */
+  .upload-section {
+    margin-bottom: 20px;
+  }
+  
+  .file-label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .file-input {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  /* Convert Button */
+  .convert-button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .convert-button:hover {
+    background-color: #218838;
+  }
+  
+  /* Success Message */
+  .success-message {
+    margin-top: 20px;
+    background-color: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    color: #155724;
+  }
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .App {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .App-header h1 {
+      font-size: 20px;
+    }
+  
+    .convert-button {
+      font-size: 14px;
+    }
+  }
+  
+  /* Button Hover Effect */
+.convert-button {
+    transition: background-color 0.3s, transform 0.2s ease;
+  }
+  
+  .convert-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  /* Success Message Animation */
+  .success-message {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
